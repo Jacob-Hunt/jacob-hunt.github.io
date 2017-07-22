@@ -15,22 +15,28 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Navbar -->
-<nav class="navbar fixed-top navbar-inverse bg-inverse">
+<nav class="navbar fixed-top navbar-toggleable navbar-inverse bg-inverse">
+  <!-- collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-buttons" aria-controls="nav-buttons" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 <!-- Nav tabs -->
-  <ul class="nav nav-pills" role="pilllist">
-    <li class="nav-item">
-      <a class="nav-link active" href="#pg_1" role="tab">Jacob Hunt</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#pg_2">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#pg_3">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#pg_4">Contact</a>
-    </li>
-  </ul>
+  <div class="collapse navbar-collapse navbar-inverse bg-inverse" id="nav-buttons">
+    <ul class="nav-pills navbar-nav mr-auto mt-2 mt-lg-0" role="pilllist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#pg_1" role="tab">Jacob Hunt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pg_2">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pg_3">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pg_4">Contact</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 <!-- front splash -->
@@ -39,7 +45,7 @@
   <a name="pg_1"></a>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-8">
         <div id="header" class="card card-inverse">
           <div id="header-text">
             <h1 class="float-left"><strong>Jacob Hunt</strong></h1>
@@ -50,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div id="header-portrait" class="col-sm-8 float-right">
+      <div id="header-portrait" class="col-sm-4 float-right">
         <img src="http://res.cloudinary.com/dct9np835/image/upload/v1499209733/portrait-cropped_e61bxi.jpg" alt="portrait" class="rounded-circle float-right" width="250" height="250" />
       </div>
     </div>
@@ -84,16 +90,16 @@
   <a name="pg_3"></a>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
         <div id="portfolio-header" class="card card-inverse">
           <h1 class="text-center"><strong>Portfolio</strong></h1>
         </div>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-md-4"></div>
     </div>
     <div class="row">
-      <div class="col-sm-3 portfolio-item">
+      <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card no-gutters border">
           <a href="https://github.com/jacob-hunt/" class="col-12 no-gutters" target="_blank">
             <img class="card-img-top col-12" src="http://res.cloudinary.com/dct9np835/image/upload/v1500522859/scripts_thumbnail_wb81kg.jpg" alt="Source code thumbnail" />
@@ -106,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3 portfolio-item">
+      <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card no-gutters border">
           <a href="http://huntsorganicfarm.weebly.com/" class="col-12 no-gutters" target="_blank">
             <img class="card-img-top col-12" src="http://res.cloudinary.com/dct9np835/image/upload/v1499316971/hof_thumbnail_o29dhq.jpg" alt="Hunt's Organic Farm thumbnail" />
@@ -119,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3 portfolio-item">
+      <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card no-gutters border">
           <a href="https://frenchthellama88.pythonanywhere.com/" class="col-12 no-gutters" target="_blank">
             <img class="card-img-top col-12" src="http://res.cloudinary.com/dct9np835/image/upload/v1499378903/ff_thumbnail_jnzajf.jpg" alt="FlickFinder thumbnail" />
@@ -132,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3 portfolio-item">
+      <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card no-gutters border">
           <a href="https://jacob-hunt.github.io/random-quote-machine/" class="col-12 no-gutters" target="_blank">
             <img class="card-img-top col-12" src="http://res.cloudinary.com/dct9np835/image/upload/v1500522404/quote_thumbnail_bpmx2i.jpg" alt="freeCodeCamp thumbnail" />
@@ -159,7 +165,7 @@
         <div id="contact-header" class="card card-inverse">
           <h1 class="float-left"><strong>Contact</strong></h1>
           <hr class="divider" />
-          <p><h4>Email: </h4>jacobhuntemail@gmail.com</p>
+          <h4>Email: </h4><h5>jacobhuntemail@gmail.com</h5>
           <hr class="divider" />
           <div id="social" align="center">
             <a href="http://github.com/jacob-hunt/" target="_blank"><img class="social-button" src="http://res.cloudinary.com/dct9np835/image/upload/v1499233759/github_fhyggz.png" alt="GitHub" /></a>
@@ -172,7 +178,7 @@
 </div>
 
 <nav id="footer" class="navbar navbar-inverse bg-inverse">
-  <p>This website was designed and coded by <a href="http://github.com/jacob-hunt/">Jacob Hunt</a></p>
+  <p>This website was designed and coded by <a href="http://github.com/jacob-hunt/" target="_blank">Jacob Hunt</a></p>
 </nav>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
