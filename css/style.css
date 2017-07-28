@@ -46,11 +46,19 @@
   font-family: "Times New Roman", Georgia, Serif;
 }
 
-.portfolio-item{
-  height: 500px;
+#portfolio-row{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.portfolio-column{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.portfolio-item{
+  margin-bottom: 20px;
 }
 
 #contact-header{
@@ -98,10 +106,7 @@
   flex-direction: column;
 }
 
-.thumb-text{
-  min-height: 75px;
-  margin-left: 15px;
-  margin-right: 15px;
+.thumb-text-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -142,6 +147,9 @@ hr.divider {
   .thumb-text{
     font-size: 0.8em;
   }
+  .portfolio-item{
+    height: 315px;
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px){
@@ -150,6 +158,9 @@ hr.divider {
   }
   .thumb-text{
     font-size: 0.8em;
+  }
+  .portfolio-item{
+    height: 275px;
   }
 }
 
@@ -166,6 +177,9 @@ hr.divider {
   .thumb-text{
     font-size: 1.2em;
   }
+  .portfolio-item{
+    height: 350px;
+  }
 }
 
 @media all and (min-width: 576px) and (max-width: 768px){
@@ -181,6 +195,9 @@ hr.divider {
   .thumb-text{
     font-size: 1.2em;
   }
+  .portfolio-item{
+    height: 350px;
+  }
 }
 
 @media(max-width: 575px){
@@ -189,5 +206,8 @@ hr.divider {
   }
   .thumb-text{
     font-size: 1.2em;
+  }
+  .portfolio-item{
+    height: 350px;
   }
 }
