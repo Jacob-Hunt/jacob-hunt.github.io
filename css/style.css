@@ -160,7 +160,7 @@ hr.divider {
   }
 }
 
-@media all and (min-width: 769px) and (max-width: 991px){
+@media all and (min-width: 768px) and (max-width: 991px){
   #header{
     margin-right: 150px;
   }
@@ -171,14 +171,14 @@ hr.divider {
     margin-left: -75px;
   }
   .thumb-text{
-    font-size: 0.8em;
+    font-size: 1.0em;
   }
   .portfolio-item{
     height: 350px;
   }
 }
 
-@media all and (min-width: 576px) and (max-width: 768px){
+@media all and (min-width: 576px) and (max-width: 767px){
   #header-portrait{
     margin-top: 150px;
   }
