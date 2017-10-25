@@ -71,6 +71,16 @@
   font-family: "Times New Roman", Georgia, Serif;
 }
 
+#contact-header > h4 > a {
+  color: #ddd;
+}
+
+#contact-header > h4 > a:hover,
+#contact-header > h4 > a:visited,
+#contact-header > h4 > a:active {
+  color: #fff;
+}
+
 #footer{
   color: #ddd;
 }
