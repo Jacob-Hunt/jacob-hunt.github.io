@@ -120,6 +120,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 85px;
+  width: 100%;
+}
+
+.thumb-text {
+  margin: 0;
+  padding: 0px 20px 0px 20px;
+  vertical-align: middle;
 }
 
 .nav-pills > li > a.active {
@@ -162,6 +170,9 @@ hr.divider {
   #header{
     margin-right: 250px;
   }
+  .thumb-text-container{
+    height: 80px;
+  }
   .thumb-text{
     font-size: 0.8em;
   }
@@ -180,6 +191,9 @@ hr.divider {
   #contact-header{
     margin-left: -75px;
   }
+  .thumb-text-container{
+    height: 70px;
+  }
   .thumb-text{
     font-size: 0.9em;
   }
@@ -197,6 +211,9 @@ hr.divider {
   }
   #contact-header{
     margin-left: -125px;
+  }
+  .thumb-text-container{
+    height: 130px;
   }
   .thumb-text{
     font-size: 1.0em;
